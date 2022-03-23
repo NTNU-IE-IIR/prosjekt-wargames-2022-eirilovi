@@ -54,18 +54,22 @@ public abstract class Army {
 
     }
 
-    public ArrayList<Unit> getCavalryUnit(); {
+    public List<Unit> getCavalryUnit() {
         return units.stream()
-                .filter(unit -> unit instanceof InfantryUnit)
+                .filter(unit -> unit instanceof CavalryUnit)
                 .collect(Collectors.toList());
     }
 
-    public String ArrayList<Unit> getRangedUnit(); {
-        return Unit.getName();
+    public List<Unit> getRangedUnit() {
+        return units.stream()
+                .filter(unit -> unit instanceof RangedUnit)
+                .collect(Collectors.toList());
     }
 
-    public String ArrayList<Unit> getCommanderUnit(); {
-        return Unit.getName();
+    public List<Unit> getCommanderUnit() {
+        return units.stream()
+                .filter(unit -> unit instanceof CommanderUnit)
+                .collect(Collectors.toList());
     }
 
 }

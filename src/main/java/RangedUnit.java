@@ -3,24 +3,34 @@ public class RangedUnit  extends Unit {
 
 
     public RangedUnit(String name, int health) {
-        super(name, health, 15, 8);}
-
-    @Override
-    int getAttackBonus() {
-        return 3;
+        super(name, health, 15, 8);
     }
 
     @Override
-    int getResistBonus() {
-        int attackBonus = 2;
-        if (timesAttacked == 0) {
-            attackBonus = 6;
+    int getAttackBonus(Terrain terrain) {
+        int attackBonus = 0;
+        if (terrain == Terrain.HILL) {
+            attackBonus += 3;
+
         }
-        else if (timesAttacked == 1) {
-            attackBonus = 4;
+
+            return attackBonus;
+    }
+
+    @Override
+    int getResistBonus(Terrain terrain) {
+        int resistBonus = 2;
+        if (timesAttacked == 0) {
+            resistBonus = 6;
+        } else if (timesAttacked == 1) {
+            resistBonus = 4;
         }
         timesAttacked += 1;
-        return attackBonus;
+
+        if (terrain == Terrain.FOREST) {
+            resistBonus += 3;
+        }
+        return resistBonus;
 
     }
 }

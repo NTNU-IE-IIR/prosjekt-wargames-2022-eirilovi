@@ -7,7 +7,7 @@ public class Battle {
         this.armyTwo = armyTwo;
     }
 
-    public Army simulate() {
+    public Army simulate (Terrain terrain) {
         while (armyOne.hasUnits() && armyTwo.hasUnits()) {
             Unit unitOne = armyOne.getRandom();
             Unit unitTwo = armyTwo.getRandom();

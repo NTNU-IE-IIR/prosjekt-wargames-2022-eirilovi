@@ -32,9 +32,9 @@ abstract class Unit {
         return armor;
     }
 
-    abstract int getAttackBonus();
+    abstract int getAttackBonus(Terrain terrain);
 
-    abstract int getResistBonus();
+    abstract int getResistBonus(Terrain terrain);
 
 }
 

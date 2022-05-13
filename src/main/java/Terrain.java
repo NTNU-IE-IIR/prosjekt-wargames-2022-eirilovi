@@ -1,2 +1,5 @@
-public class Terrain {
-}
+public enum Terrain {
+        HILL,
+        PLAINS,
+        FOREST,
+    }

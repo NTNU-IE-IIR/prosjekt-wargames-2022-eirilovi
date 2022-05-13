@@ -4,6 +4,6 @@ public class CommanderUnit extends CavalryUnit{
     private int attack;
     private int armor;
 
-    public CommanderUnit(String name, int health, 25, 15) { super(name, health);
+    public CommanderUnit(String name, int health) { super(name, health);
     }
 }

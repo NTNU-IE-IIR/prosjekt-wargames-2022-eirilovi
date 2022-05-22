@@ -2,11 +2,21 @@ public class Battle {
     private Army armyOne;
     private Army armyTwo;
 
+    /**
+     * Creates two armies
+     * @param armyOne
+     * @param armyTwo
+     */
     Battle(Army armyOne, Army armyTwo) {
         this.armyOne = armyOne;
         this.armyTwo = armyTwo;
     }
 
+    /**
+     * Simulates a battle between the two armies
+     * @param terrain
+     * @return  winner of the battle
+     */
     public Army simulate (Terrain terrain) {
         while (armyOne.hasUnits() && armyTwo.hasUnits()) {
             Unit unitOne = armyOne.getRandom();
@@ -35,7 +45,10 @@ public class Battle {
             return winner;
         }
 
-        public void MakeArmies() {
+    /**
+     * Dummy method that makes two infantry units
+     */
+    public void MakeArmies() {
             for (int i = 0; i < 10; i++) {
                 armyOne.add(new InfantryUnit("CoolName", 10));
                 armyTwo.add(new InfantryUnit("LameName", 20));

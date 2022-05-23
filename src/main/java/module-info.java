@@ -1,4 +1,4 @@
-module idata2001.waragames {
+module idata2001.wargames {
     requires javafx.controls;
     requires javafx.fxml;
     requires java.logging;
@@ -7,4 +7,7 @@ module idata2001.waragames {
     // Need to open the root-package for "everyone" because JUnit5 uses reflection.
     opens idata2001.wargames;
 
+    exports idata2001.wargames;
+    exports idata2001.wargames.model;
+    opens idata2001.wargames.model;
 }

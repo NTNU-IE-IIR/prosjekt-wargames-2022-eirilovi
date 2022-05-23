@@ -19,10 +19,10 @@ public class WarGamesApp extends Application {
     @Override
     public void start(Stage primaryStage) {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("javafx/fxml/wargames.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("wargames.fxml"));
             Parent root = fxmlLoader.load();
             Controller mainWindowController = fxmlLoader.getController();
-            Scene scene = new Scene(root, 700, 400);
+            Scene scene = new Scene(root, 1920, 1080);
             primaryStage.setTitle("WarGames");
             primaryStage.setScene(scene);
             primaryStage.show();

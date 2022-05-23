@@ -19,7 +19,6 @@ public class InfantryUnit extends Unit {
         int attackBonus = 0;
         if (terrain == Terrain.FOREST) {
             attackBonus += 3;
-
         }
 
         return attackBonus;
@@ -37,7 +36,6 @@ public class InfantryUnit extends Unit {
             attackBonus += 3;
 
         }
-
         return attackBonus;
     }
 }

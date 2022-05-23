@@ -1,0 +1,4 @@
+Eiriks armé
+Infantry,KuleGutta,100
+Cavalry,TeiteGutta,100
+Ranged,FeiteGutta,100

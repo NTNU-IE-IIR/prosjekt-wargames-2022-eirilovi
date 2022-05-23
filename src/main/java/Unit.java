@@ -24,7 +24,7 @@ abstract class Unit {
      * @param opponent
      */
     public void attack(Unit opponent) {
-
+        this.health -= 5;
     }
 
     /**

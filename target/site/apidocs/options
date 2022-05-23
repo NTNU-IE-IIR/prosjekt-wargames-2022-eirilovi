@@ -1,0 +1,25 @@
+-classpath
+'C:/Users/eilov/.m2/repository/org/openjfx/javafx-fxml/17.0.2/javafx-fxml-17.0.2.jar;C:/Users/eilov/.m2/repository/org/openjfx/javafx-fxml/17.0.2/javafx-fxml-17.0.2-win.jar;C:/Users/eilov/.m2/repository/org/openjfx/javafx-controls/17.0.2/javafx-controls-17.0.2.jar;C:/Users/eilov/.m2/repository/org/openjfx/javafx-controls/17.0.2/javafx-controls-17.0.2-win.jar;C:/Users/eilov/.m2/repository/org/openjfx/javafx-graphics/17.0.2/javafx-graphics-17.0.2.jar;C:/Users/eilov/.m2/repository/org/openjfx/javafx-graphics/17.0.2/javafx-graphics-17.0.2-win.jar;C:/Users/eilov/.m2/repository/org/openjfx/javafx-base/17.0.2/javafx-base-17.0.2.jar;C:/Users/eilov/.m2/repository/org/openjfx/javafx-base/17.0.2/javafx-base-17.0.2-win.jar'
+-encoding
+'UTF-8'
+-public
+-source
+'17'
+-sourcepath
+'C:/Program Files (x86)/IntelliJ/kravspekoblig3/kravspekSem2/src/main/java;C:/Program Files (x86)/IntelliJ/kravspekoblig3/kravspekSem2/target/generated-sources/annotations'
+-author
+-bottom
+'Copyright &#169; 2022. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Program Files (x86)/IntelliJ/kravspekoblig3/kravspekSem2/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'kravspekSem2 1.0-SNAPSHOT API'
+-nohelp
+-use
+-version
+-windowtitle
+'kravspekSem2 1.0-SNAPSHOT API'

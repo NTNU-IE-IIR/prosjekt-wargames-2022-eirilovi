@@ -1,3 +1,5 @@
+package idata2001.wargames.model;
+
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.Scanner;

@@ -1,3 +1,5 @@
+package idata2001.wargames.model;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;

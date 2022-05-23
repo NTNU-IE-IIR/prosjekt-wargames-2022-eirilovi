@@ -1,3 +1,5 @@
+package idata2001.wargames.ui;
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -17,7 +19,7 @@ public class WarGamesApp extends Application {
     @Override
     public void start(Stage primaryStage) {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("wargames.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("javafx/fxml/wargames.fxml"));
             Parent root = fxmlLoader.load();
             Controller mainWindowController = fxmlLoader.getController();
             Scene scene = new Scene(root, 700, 400);

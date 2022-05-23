@@ -1,3 +1,5 @@
+package idata2001.wargames.model;
+
 import java.util.ArrayList;
 
 /**

@@ -1,3 +1,5 @@
+package idata2001.wargames.model;
+
 public class CommanderUnit extends CavalryUnit{
     private String name;
     private int health;

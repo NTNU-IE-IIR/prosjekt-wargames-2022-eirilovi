@@ -1,12 +1,16 @@
-public class InfantryUnit extends Unit {
+package idata2001.wargames.model;
+
+public class CavalryUnit  extends Unit {
+    private boolean firstAttack;
 
     /**
-     * Creates an infantry unit
+     * Creates a cavalry unit
      * @param name
      * @param health
      */
-    public InfantryUnit(String name, int health) {
-        super(name, health, 15, 10);
+    public CavalryUnit(String name, int health) {
+        super(name, health, 20, 12);
+        firstAttack = true;
     }
 
     /**
@@ -17,11 +21,18 @@ public class InfantryUnit extends Unit {
     @Override
     int getAttackBonus(Terrain terrain) {
         int attackBonus = 0;
-        if (terrain == Terrain.FOREST) {
+        if (firstAttack) {
+            firstAttack = false;
+            attackBonus = 6;
+        }
+        else {
+            attackBonus = 2;
+        }
+        if (terrain == Terrain.PLAINS) {
             attackBonus += 3;
         }
-
         return attackBonus;
+
     }
 
     /**
@@ -31,11 +42,10 @@ public class InfantryUnit extends Unit {
      */
     @Override
     int getResistBonus(Terrain terrain) {
-        int attackBonus = 0;
+        int resistBonus = 0;
         if (terrain == Terrain.FOREST) {
-            attackBonus += 3;
-
+            resistBonus = 0;
         }
-        return attackBonus;
+        return resistBonus;
     }
 }

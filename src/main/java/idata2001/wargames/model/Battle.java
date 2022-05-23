@@ -1,3 +1,5 @@
+package idata2001.wargames.model;
+
 public class Battle {
     private Army armyOne;
     private Army armyTwo;

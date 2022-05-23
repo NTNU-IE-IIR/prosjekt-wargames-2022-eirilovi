@@ -1,3 +1,5 @@
+package idata2001.wargames.model;
+
 abstract class Unit {
     private String name;
     private int health;

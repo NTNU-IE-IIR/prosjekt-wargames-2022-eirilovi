@@ -1,3 +1,5 @@
+package idata2001.wargames.model;
+
 public class RangedUnit  extends Unit {
     private int timesAttacked;
 

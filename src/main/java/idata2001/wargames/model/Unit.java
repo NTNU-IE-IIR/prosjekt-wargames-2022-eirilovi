@@ -1,5 +1,8 @@
 package idata2001.wargames.model;
 
+/**
+ * Creates the abstract class Unit
+ */
 public abstract class Unit {
     private String name;
     private int health;
@@ -8,10 +11,10 @@ public abstract class Unit {
 
     /**
      * Makes a template of what a unit consists of
-     * @param name
-     * @param health
-     * @param attack
-     * @param armor
+     * @param name name of unit
+     * @param health health of unit
+     * @param attack attack-power of unit
+     * @param armor armour-stats of unit
      */
     public Unit(String name,int health, int attack, int armor) {
         this.name = name;
@@ -23,7 +26,7 @@ public abstract class Unit {
 
     /**
      * attacks the opponent
-     * @param opponent
+     * @param opponent opposite army
      */
     public void attack(Unit opponent) {
         this.health -= 5;
@@ -55,7 +58,7 @@ public abstract class Unit {
 
     /**
      * returns the armor value
-     * @return
+     * @return armor value
      */
     public int getArmor() {
         return armor;
@@ -63,14 +66,14 @@ public abstract class Unit {
 
     /**
      * Gives an attack bonus
-     * @param terrain
+     * @param terrain input terrain
      * @return attack bonus
      */
      abstract int getAttackBonus(Terrain terrain);
 
     /**
      * Gives a resist bonus
-     * @param terrain
+     * @param terrain input terrain
      * @return resist bonus
      */
     abstract int getResistBonus(Terrain terrain);

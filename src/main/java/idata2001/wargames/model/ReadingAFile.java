@@ -4,6 +4,9 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.Scanner;
 
+/**
+ * Creates a class that is able to read files
+ */
 public class ReadingAFile {
     public static void main(String[] args)
     {

@@ -12,9 +12,9 @@ public class UnitFactory {
 
         /**
          * Creates a unit based on the parameters that are input
-         * @param unitType
-         * @param unitName
-         * @param unitHealth
+         * @param unitType type of unit
+         * @param unitName name of unit
+         * @param unitHealth heath of unit
          * @return unit created
          */
         public Unit createUnit(String unitType, String unitName, int unitHealth) {
@@ -39,10 +39,10 @@ public class UnitFactory {
 
         /**
          * Creates multiple of the same unit
-         * @param unitAmount
-         * @param unitType
-         * @param unitName
-         * @param unitHealth
+         * @param unitAmount amount of units the user would like
+         * @param unitType type of unit
+         * @param unitName name of unit
+         * @param unitHealth health of unit
          * @return List of units
          */
         public ArrayList<Unit> UnitList(int unitAmount, String unitType, String unitName, int unitHealth) {

@@ -1,26 +1,29 @@
 package idata2001.wargames.ui;
 
-import javafx.event.ActionEvent;
+import idata2001.wargames.model.Unit;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
 
 public class Controller {
 
     @FXML
-    private Button simulateButton;
+    private TableColumn<Unit, Integer> health;
 
     @FXML
-    private void startGame(ActionEvent event) {
-
-    }
+    private TableView<Unit> leftArmy;
 
     @FXML
-    private void loadArmy(ActionEvent event) {
-
-        }
+    private TableColumn<Unit, String> name;
 
     @FXML
-    private void loadArmy2(ActionEvent event) {
+    private Button startGame;
+
+    @FXML
+    private TableColumn<Unit, String> unit;
+
+    public void loadArmy() {
 
     }
 }

@@ -1,6 +1,6 @@
 package idata2001.wargames.model;
 
-abstract class Unit {
+public abstract class Unit {
     private String name;
     private int health;
     private int attack;
@@ -66,7 +66,7 @@ abstract class Unit {
      * @param terrain
      * @return attack bonus
      */
-    abstract int getAttackBonus(Terrain terrain);
+     abstract int getAttackBonus(Terrain terrain);
 
     /**
      * Gives a resist bonus

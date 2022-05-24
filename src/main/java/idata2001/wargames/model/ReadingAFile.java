@@ -21,7 +21,7 @@ public class ReadingAFile {
         }
         catch (FileNotFoundException e)
         {
-            System.err.println("Error: file 'test.txt' could not be opened. Does it exist?");
+            System.err.println("Error: file 'arme.txt' could not be opened. Does it exist?");
             System.exit(1);
         }
     }

@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * Blank constructor
  */
 public class UnitFactory {
-        private UnitFactory() {
+        public UnitFactory() {
 
         }
 
@@ -29,7 +29,7 @@ public class UnitFactory {
                                 unit = new CavalryUnit(unitName, unitHealth);
                         case "Commander":
                                 unit = new CommanderUnit(unitName, unitHealth);
-                        case default:
+                        default:
                                 unit = null;
 
                 }

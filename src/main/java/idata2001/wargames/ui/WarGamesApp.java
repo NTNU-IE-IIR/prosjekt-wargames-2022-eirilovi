@@ -22,7 +22,7 @@ public class WarGamesApp extends Application {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("wargames.fxml"));
             Parent root = fxmlLoader.load();
             Controller mainWindowController = fxmlLoader.getController();
-            Scene scene = new Scene(root, 1920, 1080);
+            Scene scene = new Scene(root, 1070, 800);
             primaryStage.setTitle("WarGames");
             primaryStage.setScene(scene);
             primaryStage.show();
